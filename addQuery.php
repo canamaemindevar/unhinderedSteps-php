@@ -1,6 +1,6 @@
 <?php
 
-$con = mysqli_connect("localhost","root","","userList");
+$con = mysqli_connect("localhost","kouiot_emin","]@%A3zi(t[GA","kouiot_emin");
 
 $response = array();
 if($con) {
@@ -11,7 +11,7 @@ if($con) {
 
  header("Content-Type: JSON");
  $word = $data['word'];
- $userId = $data['userId'];
+ $userId = $data['id'];
 
  $query = "INSERT INTO `UserSearch`(`userId`,`word` ) VALUES ('$userId','$word')";
 

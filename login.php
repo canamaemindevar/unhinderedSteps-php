@@ -1,7 +1,7 @@
 
 <?php
 
-$con = mysqli_connect("localhost","root","","userList");
+$con = mysqli_connect("localhost","kouiot_emin","]@%A3zi(t[GA","kouiot_emin");
 $response = array();
 
 if($con) {

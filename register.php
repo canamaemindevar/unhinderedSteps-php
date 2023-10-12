@@ -1,14 +1,13 @@
 <?php
 
-$con = mysqli_connect("localhost","root","","userList");
+$con = mysqli_connect("localhost","kouiot_emin","]@%A3zi(t[GA","kouiot_emin");
 
 $response = array();
 if($con) {
   
 
  $data = json_decode(file_get_contents('php://input'),true );
- //print_r($data);
-   
+
   header("Content-Type: JSON");
  $mail = $data['mail'];
  $username = $data['username'];
@@ -42,8 +41,8 @@ else {
     echo "DB connection failed";
 }
 
-mysqli_free_result($result);
-mysqli_close($con);
+//mysqli_free_result($result);
+//mysqli_close($con);
 
 
 

@@ -1,6 +1,6 @@
 <?php
 
-$con = mysqli_connect("localhost","root","","userList");
+$con = mysqli_connect("localhost","kouiot_emin","]@%A3zi(t[GA","kouiot_emin");
 
 $response = array();
 if($con) {
@@ -10,9 +10,9 @@ if($con) {
  
 
  header("Content-Type: JSON");
- $word = $data['word'];
+ 
  $userId = $data['userId'];
-
+ $word = $data['word'];
  $query = "INSERT INTO `UserFavorite`(`userId`,`word` ) VALUES ('$userId','$word')";
 
  $result = mysqli_query($con,$query);

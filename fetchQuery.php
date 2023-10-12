@@ -1,6 +1,6 @@
 <?php
 
-$con = mysqli_connect("localhost","root","","userList");
+$con = mysqli_connect("localhost","kouiot_emin","]@%A3zi(t[GA","kouiot_emin");
 $response = array();
 
 if($con) {
@@ -9,7 +9,7 @@ if($con) {
     
     $data = json_decode(file_get_contents('php://input'),true );
     header("Content-Type: JSON");
-    $userId = $data['userId'];
+    $userId = $data['id'];
     $sql = "SELECT * FROM `UserSearch` WHERE userId = '$userId'";
     $result = mysqli_query($con,$sql);
  
